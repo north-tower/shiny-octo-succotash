@@ -29,7 +29,7 @@ const PaymentForm = () => {
     e.preventDefault();
     
     try {
-      const res = await axios.post('http://localhost:3000/create-payment', formData);
+      const res = await axios.post('https://redesigned-dollop-sepia.vercel.app/create-payment', formData);
       setError(null);
       // Redirect to the payment page with the trackId and payment link
       const { trackId, payLink } = res.data;
