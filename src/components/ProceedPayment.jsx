@@ -6,7 +6,7 @@ import { useLocation, useParams } from 'react-router-dom';
 const ProceedPayment = () => {
   const { trackId } = useParams();
   const { state } = useLocation();
-  const { payLink } = state || {};a
+  const { payLink } = state || {};
 
   if (!payLink) {
     return <p>Error: No payment link found.</p>;

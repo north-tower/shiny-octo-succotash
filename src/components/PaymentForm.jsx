@@ -42,7 +42,7 @@ const PaymentForm = () => {
   return (
     <div>
       <h1>Create Payment</h1>
-      <form onSubmit={handleSubmit}>
+       <form onSubmit={handleSubmit}>
         <div>
           <label>Amount:</label>
           <input
