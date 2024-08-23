@@ -13,11 +13,8 @@ const App = () => {
         <Route path="/" element={<PaymentForm />} />
         <Route path="/proceed-payment/:trackId" element={<ProceedPayment />} />
         <Route path="/success" element={<SuccessPage />} />
-<<<<<<< HEAD
 
 
-=======
->>>>>>> b5834ba8123aabadae95ff8f4dc058a5c43a62f0
       </Routes>
     </Router>
   );
