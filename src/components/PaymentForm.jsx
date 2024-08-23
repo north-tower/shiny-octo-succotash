@@ -10,7 +10,7 @@ const PaymentForm = () => {
     lifeTime: 90,
     feePaidByPayer: 1,
     underPaidCover: 10,
-    callbackUrl: 'https://example.com/callback',
+    callbackUrl: 'http://localhost:3000/payment-callback',
     description: 'Order #12345',
     orderId: 'ORD-12345',
     email: 'customer@example.com'
@@ -27,7 +27,7 @@ const PaymentForm = () => {
     e.preventDefault();
     
     try {
-      const res = await axios.post('https://redesigned-dollop-sepia.vercel.app/create-payment', formData);
+      const res = await axios.post('http://localhost:3000/create-payment', formData);
       setError(null);
       // Redirect to the payment page with the trackId and payment link
       const { trackId, payLink } = res.data;
